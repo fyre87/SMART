@@ -9,7 +9,7 @@ if '--cythonize' in sys.argv:
     del sys.argv[sys.argv.index('--cythonize')]
 else:
     cythonize_switch = False
-
+cythonize_switch = True
 def get_ext_modules():
     import numpy
     # Find all includes
@@ -125,6 +125,8 @@ def setup_package():
                         'Programming Language :: Python :: 3.4',
                         'Programming Language :: Python :: 3.5',
                         'Programming Language :: Python :: 3.6',
+                        'Programming Language :: Python :: 3.7',
+                        'Programming Language :: Python :: 3.9',
                         'Topic :: Scientific/Engineering',
                         'Topic :: Software Development'],
         'install_requires': [
