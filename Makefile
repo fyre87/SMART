@@ -1,6 +1,6 @@
-PYTHON ?= python
-CYTHON ?= cython
-NOSETESTS ?= nosetests
+PYTHON ?= python3
+CYTHON ?= cython3
+NOSETESTS ?= nosetests3
 CYTHONSRC=$(wildcard pyearth/*.pyx)
 CSRC=$(CYTHONSRC:.pyx=.c)
 
