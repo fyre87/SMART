@@ -402,11 +402,9 @@ cdef class ForwardPasser:
                 else:
                     gcv_ = gcv_factor_k_plus_1 * mse_
 
-                if linear_variables[variable] and variable_can_be_linear:
+                if linear_variables[variable]:
                     mse = mse_
                     knot_idx = -1
-                elif linear_variables[variable] and not variable_can_be_linear:
-                    continue
                 else:
                     # Find the valid knot candidates
                     candidates, candidates_idx = predictor.knot_candidates(p, self.endspan,
