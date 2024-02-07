@@ -1,5 +1,15 @@
 py-earth [![Build Status](https://travis-ci.org/scikit-learn-contrib/py-earth.png?branch=master)](https://travis-ci.org/scikit-learn-contrib/py-earth?branch=master)
 ========
+## Note for building with python3.9+.
+
+Create a virtual environment with numpy==1.26.2, scipy==1.10.1, Cython==0.29.36
+Then, python setup.py build_ext --inplace --cythonize.  Or python setup.py install --cythonize.
+
+For testing, also install nose2 (the old nose no longer works and pynose somehow tests nothing) and scikit-learn
+
+NOSETESTS=nose2 make test
+
+===
 
 A Python implementation of Jerome Friedman's Multivariate Adaptive Regression Splines algorithm,
 in the style of scikit-learn. The py-earth package implements Multivariate Adaptive Regression Splines using Cython and provides an interface that is compatible with scikit-learn's Estimator, Predictor, Transformer, and Model interfaces.  For more information about
