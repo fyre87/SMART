@@ -1,3 +1,21 @@
+## SMART
+
+Built for python 3.10.8
+
+Create an environment to run it:
+python3.10 -m venv myenv
+source myenv/bin/activate
+pip install numpy==1.26.1
+pip install scikit-learn==1.3.2
+pip install six==1.16.0
+pip install pandas
+pip install matplotlib
+pip install Cython
+
+
+
+
+
 py-earth [![Build Status](https://travis-ci.org/scikit-learn-contrib/py-earth.png?branch=master)](https://travis-ci.org/scikit-learn-contrib/py-earth?branch=master)
 ========
 
