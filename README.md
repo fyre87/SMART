@@ -14,7 +14,12 @@ pip install matplotlib
 pip install Cython
 ```
 
+New hyperparameters::
+`subset_method = ['QR_cat_validation' or 'linreg_validation']` 
 
+`QR_cat_validation` is the method described in the paper, whereas `linreg_validation` is a much slower and much more thorough method looking at every possible split from scratch
+
+`max_depth` - limits the depth of the tree
 
 
 
