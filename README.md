@@ -1,5 +1,19 @@
 ## SMART
 
+Official implementation of Spline-based Multivariate Adaptive Regression Splines. 
+
+Paper found here: https://arxiv.org/abs/2410.05597
+
+Cite as: 
+```
+@article{pattie2024smart,
+  title={SMART: A Flexible Approach to Regression using Spline-Based Multivariate Adaptive Regression Trees},
+  author={Pattie, William and Krishna, Arvind},
+  journal={arXiv preprint arXiv:2410.05597},
+  year={2024}
+}
+```
+
 Built for python 3.10.8
 
 Create an environment to run it:
