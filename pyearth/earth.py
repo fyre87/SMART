@@ -304,7 +304,7 @@ class Earth(BaseEstimator, RegressorMixin, TransformerMixin, MultiOutputMixin):
                  fast_h=None, smooth=None, enable_pruning=True,
                  feature_importance_type=None, allow_subset = True, 
                  subset_method='QR_cat_validation', 
-                 vars_to_consider = 'all', max_depth = 4, 
+                 vars_to_consider = 'all', max_depth = 2, 
                  points_to_validate = 100, verbose=0):
 
         self.max_terms = max_terms
