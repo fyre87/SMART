@@ -304,10 +304,9 @@ class Earth(BaseEstimator, RegressorMixin, TransformerMixin, MultiOutputMixin):
                  fast_h=None, smooth=None, enable_pruning=True,
                  feature_importance_type=None, allow_subset = True, 
                  subset_method='QR_cat_validation', 
-                 vars_to_consider = 'all', max_depth = None, 
+                 vars_to_consider = 'all', max_depth = 4, 
                  points_to_validate = 100, verbose=0):
 
-        #print("Here is my cool NEW edit for python 3.9!")
         self.max_terms = max_terms
         self.max_degree = max_degree
         self.allow_missing = allow_missing
@@ -336,7 +335,6 @@ class Earth(BaseEstimator, RegressorMixin, TransformerMixin, MultiOutputMixin):
         self.Node = None
         self.allow_subset = allow_subset
         self.subset_method = subset_method
-        # self.cross_val_method = cross_val_method
         self.vars_to_consider = vars_to_consider
         self.max_depth = max_depth
         self.points_to_validate = points_to_validate
