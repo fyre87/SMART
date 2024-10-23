@@ -18,6 +18,13 @@ pip install matplotlib
 pip install Cython
 ```
 
+#### To install::
+
+Download the directory and navigate to it, then run:
+```
+python setup.py install --cythonize
+```
+
 #### New hyperparameters::
 
 `subset_method = ['QR_cat_validation' or 'linreg_validation']` 
